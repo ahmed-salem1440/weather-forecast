@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body>
+        <nav class="navbar navbar-dark navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container">
+                <a href="index.html" class="branding">
+                    <div class="logo me-1">
+                        <img src="Images/Logo.png" alt="">
+                    </div>
+                    <div class="logo-description">
+                        <h1 class="site-title">Weather</h1>
+                        <span class="site-description">tagline goes here</span>
+                    </div>
+                </a>
+              <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item active">
+                    <a class="nav-link " aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Live cameras</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Photos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                 
+              </div>
+            </div>
+          </nav>
+        <section class="content">
+            <div class="custom-input">
+                <input id="search-input" placeholder="Find your location..." type="text">
+                <button id="findBtn" >Find</button>
+            </div>
+            <div class="weather-container">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4 p-0">
+                    <div id="day1" class="day1 ">
+                      <div class="day1-top p-2 d-flex justify-content-between text-white">
+                        <span class="p-1" id="firstDayName">Monday</span>
+                        <span class="p-1" id="firstDayDate">20February</span>
+                      </div>
+                      <div class="dayContent p-4 text-white">
+                        <span id="country"></span>
+                        <h2 id="firstDayDegree"></h2>
+                        <span id="firstweatherStatus" class="weatherStatue"></span>
+                        <div class="wind text-center">
+                          <span  class=""><img id="humImg" src="Images/umbrella.png" alt=""><span id="humPrsntg"></span></span>
+                          <span id="mainWindDir" class="my-3" ><img id="windImg" src="Images/rya7.png" alt=""><span id="windspeed"></span></span>
+                          <span><img id="windDirImg" src="Images/west.png" alt=""><span id="windDir">East</span></span>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 p-0">
+                    <div id="day2" class="day2">
+                      <div class="day2-top p-2 d-flex justify-content-center text-white">
+                        <span class="p-1" id="secondDayName">Monday</span>
+                      </div>
+                      <div class="dayContent d-flex h-100 justify-content-center align-items-center p-3 text-center text-white">
+                        <div>
+                          <img id="secondDayImg" alt="">
+                          <h4 id="secondDayDegree"></h4>
+                          <h3 id="secondDayDegreef" class="degreeF" ></h3>
+                          <span id="secondDayWeatherStatus" class="weatherStatue">Sunny</span>
+                        </div>
+                      </div>
+    
+                    </div>
+                  </div>
+                  <div class="col-lg-4 p-0">
+                    <div id="day3" class="day3">
+                      <div class="day3-top p-2 d-flex justify-content-center text-white">
+                        <span class="p-1" id="thirdDayName">Monday</span>
+                      </div>
+                      <div class="dayContent d-flex h-100 justify-content-center align-items-center p-3 text-center text-white">
+                        <div>
+                          <img id="thirdDayImg" alt="">
+                          <h4 id="thirdDayDegree"></h4>
+                          <h3 id="thirdDayDegreef" class="degreeF" ></h3>
+                          <span id="thirdDayWeatherStatus" class="weatherStatue">Sunny</span>
+                        </div>
+                      </div>
+    
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+        </section>
+        <div class="footer ">
+            <div class="custom-input">
+                <input id="search-input" placeholder="Enter your email to subscribe..." type="text">
+                <button id="findBtn" >Subscribe</button>
+            </div>
+            <div class="icons d-flex align-items-center">
+                <div class="icon d-flex justify-content-center align-items-center">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="icon d-flex justify-content-center align-items-center">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="icon d-flex justify-content-center align-items-center">
+                    <i class="fa-brands fa-google-plus"></i>
+                </div>
+                <div class="icon d-flex justify-content-center align-items-center">
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+            </div>
+            <br>
+            <span>Copyright 2014 Company name. Designed by <a href="https://linktr.ee/ahmed_salem" class="text-white" target="_blank">Sallomaa</a> All rights reserved.</span>
+        </div>
+
+
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
