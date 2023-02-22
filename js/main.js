@@ -64,7 +64,7 @@ function weatherForcast(API = defaultAPI){
         if(weatherReq.readyState == 4){
             weatherObj = JSON.parse(weatherReq.response)
             country.innerHTML = `${weatherObj.location.name}, ${weatherObj.location.country}`
-            firstDayDegree.innerHTML = `${weatherObj.forecast.forecastday[0].day.avgtemp_c}<span id="degreeSympol">&#8451;</span><img id="firstDayImg" src ="" alt="">`
+            firstDayDegree.innerHTML = `${weatherObj.forecast.forecastday[0].day.maxtemp_c}<span id="degreeSympol">&#8451;</span><img id="firstDayImg" src ="" alt="">`
             firstDayImg = document.getElementById("firstDayImg")
             firstDayImg.src = `https:${weatherObj.current.condition.icon}`
             firstweatherStatus.innerHTML = weatherObj.forecast.forecastday[0].day.condition.text
@@ -87,8 +87,8 @@ function weatherForcast(API = defaultAPI){
 
             // ============second day================
 
-            secondDayDegree.innerHTML = `${weatherObj.forecast.forecastday[1].day.avgtemp_c}<span id="degreeSympol"> &#8451;</span>`
-            secondDayDegreef.innerHTML = `${weatherObj.forecast.forecastday[1].day.avgtemp_f}<span id="fDegreeSympol"> &#8457;</span>`
+            secondDayDegree.innerHTML = `${weatherObj.forecast.forecastday[1].day.maxtemp_c}<span id="degreeSympol"> &#8451;</span>`
+            secondDayDegreef.innerHTML = `${weatherObj.forecast.forecastday[1].day.mintemp_c}<span id="fDegreeSympol"> &#8451;</span>`
             secondDayImg.src = `https:${weatherObj.forecast.forecastday[1].day.condition.icon}`
             secondDayWeatherStatus.innerHTML = weatherObj.forecast.forecastday[1].day.condition.text
             dt2 = new Date(weatherObj.forecast.forecastday[1].date)
@@ -97,8 +97,8 @@ function weatherForcast(API = defaultAPI){
 
             // ==============third day=================
 
-            thirdDayDegree.innerHTML = `${weatherObj.forecast.forecastday[2].day.avgtemp_c}<span id="degreeSympol"> &#8451;</span><img id="firstDayImg" src ="" alt="">`
-            thirdDayDegreef.innerHTML = `${weatherObj.forecast.forecastday[2].day.avgtemp_f}<span id="fDegreeSympol"> &#8457;</span>`
+            thirdDayDegree.innerHTML = `${weatherObj.forecast.forecastday[2].day.maxtemp_c}<span id="degreeSympol"> &#8451;</span><img id="firstDayImg" src ="" alt="">`
+            thirdDayDegreef.innerHTML = `${weatherObj.forecast.forecastday[2].day.mintemp_c}<span id="fDegreeSympol"> &#8451;</span>`
             thirdDayImg.src = `https:${weatherObj.forecast.forecastday[2].day.condition.icon}`
             thirdDayWeatherStatus.innerHTML = weatherObj.forecast.forecastday[2].day.condition.text
             dt3 = new Date(weatherObj.forecast.forecastday[2].date)
