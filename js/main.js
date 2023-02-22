@@ -52,7 +52,7 @@ var windDirections = {
     "WSW":"West-southwest",
 }
 
-var defaultAPI =  "http://api.weatherapi.com/v1/forecast.json?key=67a1923b214e4484aec182012232002&q=cairo&days=3"
+var defaultAPI =  "https://api.weatherapi.com/v1/forecast.json?key=67a1923b214e4484aec182012232002&q=cairo&days=3"
 var searchAPIString;
 
 function weatherForcast(API = defaultAPI){
